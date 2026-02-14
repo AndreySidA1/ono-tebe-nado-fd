@@ -27,6 +27,9 @@
   list-style: none;
 }
 
+.header-link-list-item-active {
+  text-decoration: none;
+}
 .header-link-list-item {
   margin-left: 4px;
   text-decoration: underline;
@@ -43,9 +46,10 @@
   display: block;
 }
 
+/* Поправил позиционирование адреса, убрал ограничение по высоте*/
+
 .address {
   max-width: 240px;
-  height: 98px;
   display: flex;
   justify-self: end;
   align-items: flex-start;
@@ -60,7 +64,7 @@
   text-underline-offset: 4px;
 }
 
-.header-address {
+.city-address {
   line-height: 23px;
 }
 
@@ -74,10 +78,9 @@
 
 .overlay {
   position: absolute;
-  z-index: 3;
-  background-color: rgba(0, 0, 0, 0.5);
-  min-height: 757px;
-  width: 100%;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover-title {
@@ -141,15 +144,7 @@
   letter-spacing: 1px;
 }
 
-.cover-description-text-spising {
-  word-spacing: 24px;
-  letter-spacing: 0px;
-}
-
-.cover-description-text-spising-last {
-  word-spacing: 22px;
-  letter-spacing: 0px;
-}
+/* Добавил курсор*/
 
 .bet-button {
   z-index: 2;
@@ -157,6 +152,7 @@
   background-color: rgba(255, 255, 255, 0);
   color: #FFF;
   border: 1px solid;
+  cursor: pointer;
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   text-align: center;
@@ -200,24 +196,24 @@
   justify-content: space-between;
   min-height: 596px;
 }
-.card-type-film {
-  background-image: url(../images/card-lot-01.jpg);
+
+/* Вынес общие свойства карточчек в отдельный класс */
+
+.card-type-properties {
   background-size: cover;
   background-position: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.card-type-film {
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card-type-book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .card-type-picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .card {
@@ -280,12 +276,14 @@
   grid-template-columns: 334px 1fr;
 }
 
+/* Поменял радиус */
+
 .about-logo {
   width: 240px;
   height: 240px;
   margin: 35px 72px 320px 47px;
   background-color: #000;
-  border-radius: 120px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -13,10 +13,10 @@
  <body>
   <header class="header">
     <nav class="header-menu">
-      <ul class="header-link-list">
-         <li class="header-link-list-item-no-bullit">главная</li>
-         <li class="header-link-list-item">посмотреть лоты</li>
-         <li class="header-link-list-item">o6 аукционе</li>
+      <ul class="header-link-list"> <!--Присвоены ссылки элементам списка, в соответствии с замечанием-->
+         <li class="header-link-list-item-no-bullit"><a class="header-link-list-item-active" href="#0">главная</a></li>
+         <li class="header-link-list-item"><a href="#0">посмотреть лоты</a></li>
+         <li class="header-link-list-item"><a href="#0">o6 аукционе</a></li>
       </ul>
     </nav>
     <a class="header-logo">
@@ -25,34 +25,31 @@
     <address class="address">
       <a href="tel:+99995555555">+9 999 555 5555</a>
       <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-      <p class="header-address">Ha6. Принсенграхт 263- 265, Амстердам</p>
+      <p class="city-address">Ha6. Принсенграхт 263- 265, Амстердам</p> <!--Изменено имя класса-->
     </address>
   </header>
   <main>
     <section class="cover">
-      <div class="overlay">
+      <div class="overlay"></div> <!--убрал обёртывание оверлеем содержимого-->
       <h1 class="cover-title">
         <span class="aligned-text_left">оно</span>
         <span class="aligned-text_center">тебе</span>
         <span class="aligned-text_right">над<span class="no-letter-spacing">о</span></span>
       </h1>
       <div class="cover-description">
-        <p class="cover-description-text">Аукцион вещей, в
-        <span class="cover-description-text-spising">которые никто</span>
-        <span class="cover-description-text-spising-last">нe верил</span>
-        </p>
-        <button class="bet-button">Сделать ставку</button>
-      </div>
+        <p class="cover-description-text">Аукцион вещей, в которые никто нe верил</p><!--Убрал span, удалил лишние классы в css-->
+        <button class="bet-button" type="button">Сделать ставку</button> <!--Задано свойство button кнопке-->
       </div>
     </section>
     <section class="lots">
-      <h1 class="lots-heading">Лоты</h1>
+      <h2 class="lots-heading">Лоты</h2> <!--изменён уровень заголовка-->
       <ul class="lots-card-list">
         <li class="lots-card-list-item">
           <a class="card" href="#O">
-            <div class="card-type-film">
-              <article class="lots-card overlay">
-                <h2 class="card-title">Фильм режиссёра, который бросил киношколу</h2>
+            <div class="card-type-film card-type-properties">
+              <article class="lots-card">
+                <div class="overlay"></div> <!--Вынос оверлея отдельно-->
+                <h3 class="card-title">Фильм режиссёра, который бросил киношколу</h3> <!--изменён уровень заголовка-->
                 <p class="card-text">Не просто бросил, а ушёл с первой лекции. 
                 Какой была бы ваша ставка, если бы вы не знали, 
                 что режиссёр — Пол Томас Андерсон?</p>
@@ -62,9 +59,10 @@
         </li>
         <li class="lots-card-list-item">
           <a class="card" href="#O">
-            <div class="card-type-book">
-              <article class="lots-card overlay">
-                <h2 class="card-title">Книга, где описан один скучный день из жизни рекламного агента</h2>
+            <div class="card-type-book card-type-properties">
+              <article class="lots-card">
+                <div class="overlay"></div><!--Вынос оверлея отдельно-->
+                <h3 class="card-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
                 <p class="card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и 
                   с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 
                   года и об истории литературы, начиная с античных времён. И это всё накладывается 
@@ -75,9 +73,10 @@
         </li>
         <li class="lots-card-list-item">
           <a class="card" href="#O">
-            <div class="card-type-picture">
-              <article class="lots-card overlay">
-                <h2 class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
+            <div class="card-type-picture card-type-properties">
+              <article class="lots-card">
+                <div class="overlay"></div>
+                <h3 class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
                 <p class="card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то 
                 похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... 
                 Сколько бы вы на такое поставили, если бы не знали, что это — одна 
@@ -96,7 +95,7 @@
         <div class="about-logo">
           <img class="about-logo-image" src="images/logo-white.svg" alt="Белый логотип оно тебе надо">
         </div>
-        <h1 class="about-title">Об аукционе</h1>
+        <h2 class="about-title">Об аукционе</h2> <!--изменён уровень заголовка-->
         <div class="about-text">
           <p>Здесь вы не встретите очередное пафосное собрание 
             невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть 
@@ -105,7 +104,7 @@
             вещи, созданные любителями?</p>
           <p>Слишком сложные или, наоборот, слишком простые. 
             Опережающие своё время. В пух и прах растерзанные критиками. Непринятые 
-            и непонятые. Когда-то они казались просто неудачными. Но, несмотря <br>на 
+            и непонятые. Когда-то они казались просто неудачными. Но, несмотря на 
             критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно 
             представить современную культуру. Когда в эти вещи не верил никто, продолжали 
             верить их создатели. И сейчас эти лоты стали культовыми. </p>
@@ -117,7 +116,7 @@
     <address class="address">
       <a href="tel:+99995555555">+9 999 555 5555</a>
       <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-      <p class="header-address">Ha6. Принсенграхт 263-265, Амстердам</p>
+      <p class="city-address">Ha6. Принсенграхт 263-265, Амстердам</p> <!--Изменено имя класса-->
     </address>
     <nav class="footer-menu">
       <ul class="footer-menu-list">
@@ -134,18 +133,18 @@
     </nav>
     <ul class="footer-social-list">
       <li class="footer-social-list-item">
-        <a class="footer-social-link" href="#0">
-          <img class="footer-social-icon" src="images/yt.svg" alt="">
+        <a class="footer-social-link" href="#0" target="_blank"> <!--Добавлен Таргет-->
+          <img class="footer-social-icon" src="images/yt.svg" alt="Переход на youTube"><!--Заполнено описание-->
         </a>
       </li>
       <li class="footer-social-list-item">
-        <a class="footer-social-link" href="#0">
-          <img class="footer-social-icon" src="images/vk.svg" alt="">
+        <a class="footer-social-link" href="#0" target="_blank"><!--Добавлен Таргет-->
+          <img class="footer-social-icon" src="images/vk.svg" alt="Переход на страницу ВКонтакте"><!--Заполнено описание-->
         </a>
       </li>
       <li class="footer-social-list-item">
-        <a class="footer-social-link" href="#0">
-          <img class="footer-social-icon" src="images/pinterest.svg" alt="">
+        <a class="footer-social-link" href="#0" target="_blank"><!--Добавлен Таргет-->
+          <img class="footer-social-icon" src="images/pinterest.svg" alt="Переход на Pinterest "><!--Заполнено описание-->
         </a>
       </li>
     </ul>
