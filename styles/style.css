@@ -6,7 +6,7 @@
   padding-left: 50px;
   padding-right: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr min-content; 
+  grid-template-columns: 1fr 1fr 1fr min-content;
   align-items: center;
 }
 
@@ -23,7 +23,7 @@
   list-style: circle;
 }
 
-.header-link-list-item-no-bullit { 
+.header-link-list-item-no-bullit {
   list-style: none;
 }
 
@@ -39,7 +39,7 @@
   margin-left: 42px;
 }
 
-.header-logo-image { 
+.header-logo-image {
   display: block;
 }
 
@@ -56,18 +56,18 @@
   font-style: normal;
   font-size: 18px;
   font-weight: 400;
-  line-height: 19px; 
+  line-height: 19px;
   text-underline-offset: 4px;
 }
 
-.header-address { 
+.header-address {
   line-height: 23px;
 }
 
 .cover {
   position: relative;
   min-height: 757px;
-  background-image: url("../images/cover.jpg"); 
+  background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -95,8 +95,8 @@
   z-index: 2;
 }
 
-.aligned-text_left { 
-  display: block; 
+.aligned-text_left {
+  display: block;
   text-align: left;
   margin-top: 165px;
   margin-left: 50px;
@@ -104,32 +104,32 @@
 
 .aligned-text_center {
   display: block;
-  text-align: center; 
+  text-align: center;
   margin-left: 31px;
 }
 
-.aligned-text_right { 
-  display: block; 
+.aligned-text_right {
+  display: block;
   text-align: right;
   margin-right: 50px;
 } 
 
-.no-letter-spacing { 
+.no-letter-spacing {
   letter-spacing: 0px;
 }
 
-.cover-description { 
-  position: relative; 
+.cover-description {
+  position: relative;
   z-index: 2;
   margin-top: 107px;
   display: flex;
   justify-content: start;
-  align-items: center; 
+  align-items: center;
   gap: 107px;
 }
 
 .cover-description-text {
-  margin-left: 50px; 
+  margin-left: 50px;
   z-index: 2;
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
@@ -141,7 +141,7 @@
   letter-spacing: 1px;
 }
 
-.cover-description-text-spising { 
+.cover-description-text-spising {
   word-spacing: 24px;
   letter-spacing: 0px;
 }
@@ -222,7 +222,7 @@
 
 .card {
   height: 100%;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .card-title {
